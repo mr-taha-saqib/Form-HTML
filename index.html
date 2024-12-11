@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Conversion Website</title>
+    <style type="text/css">
+
+        .main-body {
+            background-color: gainsboro;
+        }
+
+        .page-header {
+            font-size: 35pt;
+            color: navy;
+        }
+
+        .input-medium {
+            border: 4px solid navy;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 0 10px pink;
+        }
+
+        .text {
+            color: purple;
+        }
+
+        .button-convert {
+            background-color: rgba(0, 0, 0, 0);
+            color: navy;
+            border: 4px solid navy;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 0 10px purple;
+        }
+
+        .currency-medium {
+            border: 4px solid navy;
+            box-shadow: 0 0 10px navy;
+            border-radius: 5px;
+        }
+
+        .button-reset {
+            background-color: rgba(0, 0, 0, 0);
+            color: black;
+            border: 4px solid black;
+            cursor: pointer;
+            border-radius: 13px;
+            box-shadow: 0 0 10px black;
+        }
+
+    </style>
+</head>
+<body class="main-body">
+    <h1 class="page-header">Currency Conversion Website</h1><br>
+    <p class="text">Select currency medium: 
+    <select class="currency-medium" name="country" required>
+            <option>Select</option>
+            <option value="Pakistan">Dollar</option>
+            <option value="India">Euro</option>
+            <option value="China">Pound</option>
+        </select>
+    </p>
+    <p class="text">Please enter the amount in Rupees to Convert to your Selected Medium:
+    <input class="input-medium" type="text" name="uname"  id="uname" required><br>
+    <input type="submit" value="Convert Rupees to Selected Medium" class="button-convert">
+    </p>
+    
+    <p class="text">Amount from rupees to your chosen medium: 
+    <input class="input-medium" type="text" name="uname"  id="uname" required><br>
+    Please Enter Amount in your chosen medium to convert to Rupees: 
+    <input class="input-medium" type="text" name="uname"  id="uname" required><br>
+    <input type="submit" value="Convert from Selected Medium to Rupees" class="button-convert">
+    </p>
+   
+   <p class="text"> Amount from chosen Medium to Rupees: 
+   <input class="input-medium" type="text" name="uname"  id="uname" required><br>
+   Your Previous chosen Medium was: 
+   <input class="input-medium" type="text" name="uname"  id="uname" required><br>
+   </p>
+
+   <p class="text"> Programmed By:
+    <input class="input-medium" type="text" name="uname"  id="uname" required>
+   </p>
+ 
+   <form method="POST">
+     <input class="button-reset" type="submit" value="Reset">
+   </form>
+
+</body>
+</html>
